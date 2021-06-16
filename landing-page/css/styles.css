@@ -118,7 +118,7 @@ a{
 	color: #ff8480;
 }
 
-/*Specificity (0,1,0) so only labels with the class "label" will display none*/
+/*Specificity (0,1,0) to hide only labels with the "label" class*/
 .label{
 	display: none;
 }
@@ -131,7 +131,7 @@ main form{
 	border-radius: 25px;
 }
 
-/*Specificity (0,1,0) so only input tags with the class "apply-form-input" will be styled*/
+/*Specificity (0,1,0) to style only input tags with the "apply-form-input" class*/
 .apply-form-input{
 	margin: 7px auto;
 	background-color: #f4f4f5;
@@ -177,6 +177,7 @@ footer input{
 	font-size: 16px;
 }
 
+/* Uses specificity (0, 1, 0) to change only the paragraph with class "bold" to bold*/
 .bold{
 	font-size: 18px;
 	font-weight: bold;
@@ -193,18 +194,18 @@ footer input{
 	width: 25%;
 } 
 
-.city{ /*Uses calc to remove margin's pixels between boxes and fit them into 1 row*/
+.city{ /*Uses calc to remove margin's pixels between items and fit them into 1 row*/
 	width: calc(75% - 12px);  
 	margin-left: 12px;
 } 
 
-.calculate{
+footer button{
 	background-color: #ff8480;
 	padding: 4px 0px;
 	color: white;
 }
 
-/* Uses flexbox Layout to create a row and ordered the items*/
+/* Uses flexbox Layout to create a row, order the items and space them equally*/
 .icons{
 	max-width: 300px;
 	display: flex;
@@ -212,6 +213,7 @@ footer input{
 	margin: auto;
 }
 
+/* Uses the border-radius 100% to create a circle around the icon to match the mock-up*/
 .facebook{
 	border-radius: 100%;
 }
@@ -245,20 +247,17 @@ footer input{
 		padding:40px;
 	}
 
-	/* Uses flexbox to change element's order in the form*/ 
+	/* Uses flex properties and nth-child to change element's order in the form*/ 
 	.apply-form{
 		display: flex;
 		flex-direction: column;
 	}
 
 	.apply-form div:nth-child(3){
-		order: 3;
+		order: 4;
 	}
 
-	.footer-form{
-		flex-wrap: nowrap;
-	}
-
+	/* Uses percentages to create a responsive box and fit all items in a 1 row*/
 	.calculate{
 		margin: 0px auto;
 		width: 30%;
@@ -269,7 +268,7 @@ footer input{
 	}
 }
 
-@media screen and (min-width:1250px){
+@media screen and (min-width:1300px){
 	
 	.short-text{
 		display: none;
@@ -281,12 +280,17 @@ footer input{
 		margin-top: 20px;
 		margin-bottom: 10px;
 	}
+
+	header{
+		margin: auto 140px;
+	}
 	
-	/* hiddes main image to add it as a background image do the desktop version*/
+	/* hides main image to add it as a background image do the desktop version*/
 	main img{
 		display:none;
 	}
 
+	/* Uses grid to create a evenly spaced 3 column layout*/
 	main{
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -299,14 +303,11 @@ footer input{
 	.form{
 		grid-column: 3/4;
 		max-width: 530px;
+		justify-self: end;
 	}
 
 	.title p{
 		margin-top: 42px;
-	}
-
-	header{
-		margin: auto 140px;
 	}
 
 	div.footer{
@@ -319,15 +320,19 @@ footer input{
 	}
 
 	.footer-form{
-		max-width: 700px;
+		max-width: 650px;
 	}
 
-	/* section.icons{
-		justify-content: space-around;
-		
-	} */
+	.icons{
+		margin: auto 0px;
+		justify-self: end;
+	} 
 
-	/* Uses order property to change facebook icon order */
+	.icons img {
+		margin-left: 3rem;
+	}
+
+	/* Uses order property to increase the value of the items and change its order */
 	.icons img:nth-child(1){
 		order: 1;
 	}
@@ -336,6 +341,7 @@ footer input{
 		order:2;
 	}
 
+	/* Uses border-radius 0% to remove the circle around the icon and return it to the orignial border*/ 
 	.facebook{
 		border-radius: 0%;
 	}
