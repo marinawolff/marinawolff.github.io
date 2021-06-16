@@ -12,27 +12,34 @@
     <header>
         <img class="logo" src="images/logo/logo.png" alt="Company Logo">
     </header>
-    <main class="main">
+    <main>
         <section class="title">
             <h1>Want to be your own boss?</h1>
             <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+            <img class="image" src="images/bg-image/scooter.svg" alt="Girl driving a scooter">
         </section>
         <section class="form">
-            <form class="apply-form">
-            <h2>Apply Now</h2>
-            <p>Enter your info below.</p>
-                <div class="apply-form-section">
-                    <!-- add label -->
-                    <input class="apply-form-input" type="text" placeholder="First name">
-                </div>
-                <div class="apply-form-section">
-                    <input class="apply-form-input" type="text" placeholder="Last name">
-                </div>
-                <div class="apply-form-section">
-                    <input class="apply-form-input" type="email" placeholder="Email adress">
-                </div>
-                <div class="apply-form-section">
-                    <input class="apply-form-input" type="number" placeholder="Phone number">
+            <form>
+                <h2>Apply Now</h2>
+                <p class="short-text">Enter your info below.</p>
+                <p class="long-text">Enter your info below to get started.</p>
+                <div class="apply-form">
+                    <div>
+                        <label class="label"> First name</label>
+                        <input class="apply-form-input" type="text" placeholder="First name">
+                    </div>
+                    <div>
+                        <label class="label"> Last name</label>
+                        <input class="apply-form-input" type="text" placeholder="Last name">
+                    </div>
+                    <div>
+                        <label class="label"> Phone number</label>
+                        <input class="apply-form-input" type="number" placeholder="Phone number">
+                    </div>
+                    <div>
+                        <label class="label"> Email adress</label>
+                        <input class="apply-form-input" type="email" placeholder="Email adress">
+                    </div>
                 </div>
                 <input class="checkbox" type="checkbox">
                 <label> I agree to dash terms</label><br>
@@ -42,17 +49,25 @@
         </section>
     </main>
     <footer>
-        <p>See how much you can earn with Dash.</p>
-        <p>how manu ours do you want tp drive with us this week?</p>
-        <form class="calculate">
-            <input class="hours" type="number" placeholder="Hours">
-            <input class="city" type="text" placeholder="City">
-            <button class="claculate" type="submit">Calculate</button>
-        </form>
-        <img src="images/icons/facebook.svg" alt="facebook icon">
-        <img src="images/icons/instagram.svg" alt="instagram icon">
-        <img src="images/icons/twitter.svg" alt="twitter icon">
-        <img src="images/icons/linkedin.svg" alt="facebook icon">
+        <div class="footer">
+            <div class= "footer-grid">
+                <p class="bold">See how much you can earn with Dash.</p>
+                <p>how many hours do you want to drive with us this week?</p>
+                <form class="footer-form">
+                    <label class="label"> Hours</label>
+                    <input class="hours" type="number" placeholder="Hours">
+                    <label class="label"> City</label>
+                    <input class="city" type="text" placeholder="City">
+                    <button class="calculate" type="submit">Calculate</button>
+                </form>
+            </div>
+            <section class="icons">
+                <img class="facebook" src="images/icons/facebook.svg" alt="facebook icon">
+                <img class="instagram" src="images/icons/instagram.svg" alt="instagram icon">
+                <img class="twitter" src="images/icons/twitter.svg" alt="twitter icon">
+                <img class="linkedin" src="images/icons/linkedin.svg" alt="linkedin icon">
+            </section>
+        </div>
     </footer>
 </body>
 </html>

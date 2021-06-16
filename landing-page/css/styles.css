@@ -94,13 +94,28 @@ h2{
 	font-weight: bold;
 }
 
-p{
-	margin:14px auto;
+p{	
+	font-size: 16px;
 	line-height: 1.2;
 }
 
+
 .title p{
 	font-size: 24px;
+}
+
+
+.short-text{
+	font-size: 16px;
+	margin: 18px auto 7px;
+}
+
+.long-text{
+	display: none;
+}
+
+a{
+	color: #ff8480;
 }
 
 /*Specificity (0,1,0) so only labels with the class "label" will display none*/
@@ -137,19 +152,19 @@ button{
 	border: none;
     background-color: #57eeab;
     padding: 8px 0px;
-	margin-top:14px;
+	margin: 14px 0px;
 }
 
 .checkbox{
-	width: 24px;
-	height: 24px;
+	width: 20px;
+	height: 20px;
 }
 
 footer{
     background-color: #fffd8c;
 }
 
-footer div{
+div.footer{
 	padding:12px 38px 20px;
 }
 
@@ -157,8 +172,7 @@ footer input{
 	border: none;
 	background-color: #f4f4f5;
 	border-radius: 10px;
-	padding: 8px; 
-	margin: 6px auto;
+	padding: 10px; 
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 }
@@ -172,27 +186,30 @@ footer input{
 .footer-form{ 
 	display: flex;
 	flex-wrap: wrap;
+	margin: 15px 0px;
 }
 
 .hours{
 	width: 25%;
-}
+} 
 
-.city{
-	width: calc(75% - 16px);
-}
+.city{ /*Uses calc to remove margin's pixels between boxes and fit them into 1 row*/
+	width: calc(75% - 12px);  
+	margin-left: 12px;
+} 
 
 .calculate{
 	background-color: #ff8480;
 	padding: 4px 0px;
-	margin: 6px auto 30px;
 	color: white;
 }
 
+/* Uses flexbox Layout to create a row and ordered the items*/
 .icons{
+	max-width: 300px;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
+	margin: auto;
 }
 
 .facebook{
@@ -200,13 +217,127 @@ footer input{
 }
 
 @media screen and (min-width:740px){
+	header,
+	main
+		{
+		margin: auto 82px;
+	}
 
+	div.footer{
+		margin: auto 82px;
+		padding: 20px 0px;
+	}
 
+	h1{
+		font-size: 80px;
+	}
+	
+	.short-text{
+		font-size: 30px;
+		margin-top: 26px;
+	}
 
+	p{
+		font-size: 16px;
+	}
+
+	main form{
+		padding:40px;
+	}
+
+	/* Uses flexbox to change element's order in the form*/ 
+	.apply-form{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.apply-form div:nth-child(3){
+		order: 3;
+	}
+
+	.footer-form{
+		flex-wrap: nowrap;
+	}
+
+	.calculate{
+		margin: 0px auto;
+		width: 30%;
+	}
+
+	.city{
+		width: 40%;
+	}
 }
 
-@media screen and (min-width:1023px){
+@media screen and (min-width:1250px){
+	
+	.short-text{
+		display: none;
+	}
 
+	.long-text{
+		display: inline-block;
+		font-size: 24px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	/* hiddes main image to add it as a background image do the desktop version*/
+	main img{
+		display:none;
+	}
 
+	main{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		background-image: url(..//images/bg-image/scooter.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 50px 140px;
+	}
+
+	.form{
+		grid-column: 3/4;
+		max-width: 530px;
+	}
+
+	.title p{
+		margin-top: 42px;
+	}
+
+	header{
+		margin: auto 140px;
+	}
+
+	div.footer{
+		margin: auto 140px;
+	}
+
+	.footer{
+		display:grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.footer-form{
+		max-width: 700px;
+	}
+
+	/* section.icons{
+		justify-content: space-around;
+		
+	} */
+
+	/* Uses order property to change facebook icon order */
+	.icons img:nth-child(1){
+		order: 1;
+	}
+
+	.icons img:nth-child(4){
+		order:2;
+	}
+
+	.facebook{
+		border-radius: 0%;
+	}
 }
 
