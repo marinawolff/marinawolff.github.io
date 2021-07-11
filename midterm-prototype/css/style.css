@@ -1,0 +1,108 @@
+/* Fonts imported from www.fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');/* font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap'); /* font-family: 'Tenor Sans', sans-serif;*/
+
+
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after{
+    box-sizing: inherit;
+  }
+
+/* Purple: #493656
+Light Purple: #9097c1
+beige: #edb169
+light beige: #faf0e3   #fadcbf
+Dark green: #acc697
+Light green :#c6dda5*/
+
+/* MOBILE DEVICES*/
+
+header{
+    margin:auto;
+}
+
+nav{
+    display: block;
+    font-family:'Open Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    background-color: #faf0e3;
+    display: flex;
+	flex-direction: column;
+}
+
+a{
+    text-decoration:none;
+    color: #493656;
+    padding: 16px;
+}
+a:hover{
+    color: #9097c1;
+}
+
+nav img{
+    display: block;
+    margin: auto;
+    width: 20%;
+    order: -1;
+}
+
+main img{
+    width: 100%;
+}
+
+main{
+    background-color: #493656;
+
+}
+
+.container{
+    background-color: #acc697;
+    padding: 10%;
+    margin: 10%; 
+}
+
+h1{
+    color: #493656;
+    font-size: 28px;
+    margin: 14px auto;
+}
+
+p{
+    color: #493656;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+@media screen and (min-width:740px){
+    nav{
+        flex-direction: row;
+        padding: 0 10%;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    nav img{
+        margin: 0;
+        width: 170px;
+        order:0;
+    }
+    
+}
+
+@media screen and (min-width: 1020px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-top: 5%;
+    }
+}
+
