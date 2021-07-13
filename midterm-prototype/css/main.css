@@ -1,18 +1,21 @@
-main{
-    background-color: white;
+.about-container{
     margin: 5%;
 }
 
 
 @media screen and (min-width:740px){
-    main{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
 }
 
 @media screen and (min-width:1020px){
-    main{
-        margin: 10%;
+    .about-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 5% 10%;
+        padding: 14px;
     }
+
+    div img{
+        margin: auto 14px;
+    }
+
 }

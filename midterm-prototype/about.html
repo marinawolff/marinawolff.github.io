@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Prototype</title>
+    <title>About</title>
 
 </head>
 <body>
@@ -22,12 +22,26 @@
         </nav>
     </header>
     <main>
-       <div>
-            <h1>Who we are</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-       </div>
-       <img src="images/ice-cream-cone.png" alt="ice cream">
+        <img class="wafer" 
+            srcset="images/wafer-straw-mobile.png 400w, 
+                    images/wafer-straw-tablet.png 750w,
+                    images/wafer-straw-web.png 1080w" 
+            src="images/wafer-straw-mobile.png"
+            alt="ice cream wafer straw">
+        <h1>About us</h1>
+        <div class="about-container">
+            <div>
+                <h2>Who we are</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <img srcset="images/about/about-320.jpg 400w,
+                            images/about/about-620.jpg 700w,
+                            images/about/about-960.jpg 1020w"
+                    sizes="(min-width:1020px) 50vw, 100vw"
+                    src="images/about/about-620.jpg" 
+                    alt="Family farm">
+        </div>
     </main>
 </body>
 </html>
