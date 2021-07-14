@@ -161,6 +161,11 @@ footer li{
     padding: 20px 5%;
 }
 
+.about-container{
+    margin: 5%;
+    padding: 14px;
+}
+
 
 @media screen and (min-width:740px){
     nav{
@@ -225,7 +230,6 @@ footer li{
         display: grid;
         grid-template-columns: auto auto;
         margin: 5% 10%;
-        padding: 14px;
     }
 
     div img{
