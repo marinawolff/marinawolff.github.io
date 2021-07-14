@@ -10,32 +10,38 @@
 </head>
 <body>
     <header> 
+        <!-- The logo image was added between the navigation bar names because 740px required it -->
         <nav>
-            <a href="index.html"> Home</a></li>
-            <a href="about.html"> About</a></li>
+            <a href="index.html"> Home</a>
+            <a href="about.html"> About</a>
             <img src="images/logo.png" alt="logo">
-            <a href="products.html"> Products</a></li>
-            <a href="contact.html"> Contact</a></li>
+            <a href="products.html"> Products</a>
+            <a href="contact.html"> Contact</a>
         </nav>
     </header>
-    <main class="purple">
-        <img
-            srcset="images/wafer-straw-mobile.png 400w, 
-                    images/wafer-straw-tablet.png 750w,
-                    images/wafer-straw-web.png 1080w" 
-            src="images/wafer-straw-mobile.png"
-            alt="ice cream wafer straw">
-        <div class="container-grid">
-            <div>
-                <h1 class="h1"> A flavor for each mood!</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed cum ad officiis sint cumque fugiat similique. Earum laudantium deleniti possimus.</p>
+    <main>
+        <section class="purple">
+             <!-- Uses image optimization for 3 different screen sizes -->
+            <img 
+                srcset="images/wafer-straw-mobile.png 400w, 
+                        images/wafer-straw-tablet.png 750w,
+                        images/wafer-straw-web.png 1080w"
+                        sizes="(min-width:1020px) 50vw, 100vw" 
+                src="images/wafer-straw-mobile.png"
+                alt="ice cream wafer straw">
+            <div class="container-grid">
+                <div>
+                    <h1 class="h1"> A flavor for each mood!</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed cum ad officiis sint cumque fugiat similique. Earum laudantium deleniti possimus.</p>
+                </div>
+                <img srcset="images/icecream-chocolate-320.png 400w,
+                            images/icecream-chocolate-620.png 700w,
+                            images/icecream-chocolate-960.png 1020w"
+                     sizes="(min-width:1020px) 50vw, 100vw"
+                     src="images/icecream-chocolate-960.png" 
+                     alt="Ice cream cone">
             </div>
-            <img srcset="images/icecream-chocolate-320.png 400w,
-                         images/icecream-chocolate-620.png 700w,
-                         images/icecream-chocolate-960.png 1020w"
-            src="images/icecream-chocolate-960.png" 
-            alt="Ice cream cone">
-        </div>
+        </section>
     </main>
     <footer>
         <div>
@@ -52,7 +58,11 @@
             </ul>
         </div>
         <div>
-            
+            <div class="icons">
+                <img class="facebook" src="images/icons/facebook.png" alt="facebook">
+                <img class="instagram" src="images/icons/instagram.png" alt="instagram">
+                <img class="twitter" src="images/icons/twitter.png" alt="twitter">
+            </div>
             <p>&copy; Copyright Magic Ice, 2020</p>
         </div>
     </footer>

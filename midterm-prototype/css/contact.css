@@ -1,11 +1,10 @@
+/* Fonts imported from www.fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');/* font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap'); /* font-family: 'Tenor Sans', sans-serif;*/
+
 main{
     background-color: #FFF;
 
-}
-
-h1{
-    font-family: 'Tenor Sans', sans-serif;
-    font-size: 40px;
 }
 
 section{
@@ -58,14 +57,8 @@ iframe{
     margin: 32px auto;
 }
 
-h2{
-    font-family: 'Tenor Sans', sans-serif;
-    font-size: 22px;
-    color: #493656;
-    Margin: 32px auto 16px;
-}
-
-li{
+/* Uses (0,0,2) specificity to style only the list in the main section of the page and not the footer*/
+main li{
     font-family: 'Open Sans', sans-serif;
     color: #493656;
     line-height: 1.5;
@@ -100,7 +93,4 @@ div p{
         padding: 44px 14px 14px;
 
     }
-}
-
-@media screen and (min-width: 1020px){
 }

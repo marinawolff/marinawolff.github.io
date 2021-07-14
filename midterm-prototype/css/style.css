@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');/* font-family: 'Open Sans', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap'); /* font-family: 'Tenor Sans', sans-serif;*/
 
-
 html{
     box-sizing: border-box;
   }
@@ -11,15 +10,6 @@ html{
   *:after{
     box-sizing: inherit;
   }
-
-/* Purple: #493656
-Light Purple: #9097c1
-beige: #edb169
-light beige: #faf0e3   #fadcbf 
-Dark green: #acc697
-Light green :#c6dda5*/
-
-/* MOBILE DEVICES*/
 
 header{
     margin:auto;
@@ -43,13 +33,12 @@ a{
     padding: 16px;
 }
 
-
 a:hover{
     color: #9097c1;
     transform: translate(0, -10px); transition: 0.5s; 
 }
 
-
+/*Gives a value of -1 to the logo so it will be the first item of the nav*/
 nav img{
     display: block;
     margin: auto;
@@ -58,6 +47,7 @@ nav img{
 }
 
 h1{
+    font-family: 'Tenor Sans', sans-serif;
     display:block;
     background-color: #493656;
     color: #fff;
@@ -67,7 +57,7 @@ h1{
     text-align: center;
 }
 
-/* Uses class to style just the h1 in the home page because it is different the other pages*/
+/* Uses class .h1 to style just the heading 1 of the home page because it is different then the other pages*/
 .h1{
     background-color: initial;
     color: #493656;
@@ -76,18 +66,20 @@ h1{
 }
 
 h2{
+    color: #493656;
     font-family: 'Tenor Sans', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    margin: 6px auto;
+    margin: 6px auto 20px;
 }
 
 h3{
+    color: #493656;
     font-family: 'Tenor Sans', sans-serif;
     font-size: 20px;
     text-align: center;
     font-weight: bold;
-    margin: 6px auto;
+    margin: 6px auto 20px;
 }
 
 h4{
@@ -97,18 +89,19 @@ h4{
 }
 
 p{
+    font-family: 'Open Sans', sans-serif;
     color: #493656;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 14px;
-    line-height: 1.3;
+    line-height: 1.5;
 }
 
-/*Uses class=.purple to style only the background color in the home page*/
+/*Uses class=.purple to style only the background color in the home page and leave the other pages as a white background color*/
 .purple{
     background-color: #493656;
+    padding-bottom: 5%;
 
 }
-
 .container-grid{
     background-color: #acc697;
     padding: 32px 32px 0;
@@ -120,7 +113,7 @@ main img{
 }
 
 footer{
-    padding:10%;
+    padding: 5% 10%;
     background-color: #faf0e3;
     color: #493656;
     font-family: 'Open Sans', sans-serif;
@@ -129,26 +122,42 @@ footer{
 
 footer p{
     font-size: 14px;
-    margin: 6px auto;
+    margin: 0;
 }
 
-/*Styles products page*/
+footer div{
+    margin-top: 14px;
+    text-align: center;
+}
 
+footer li{
+    margin-top: 6px;
+}
+
+.icons img{
+    width: 30px;
+    height: auto;
+    margin: 12px;
+}
+
+/*This is the specific styles for the products page using classes to specify styles that shouldn't interfer in other pages*/
 .container{
     padding: 5%;
-    margin: 5%;
+    margin: 16px auto;
     background-color: #fdf9f3;
     border-radius: 10px;
 }
 
 .container img{
-    width: 20%;
+    max-width: 100%;
     margin: auto;
-}
+
+} 
 
 .grid{
     background-color: white;
-    margin:auto;
+    margin: auto;
+    grid-gap: 16px;
     padding: 20px 5%;
 }
 
@@ -157,8 +166,8 @@ footer p{
     nav{
         flex-direction: row;
         padding: 0 10%;
-        align-items: center;
-        justify-content: space-around;
+        align-items: center; /* Decided to use this property instead of baseline because the navigation bar looked better with the contect centered*/
+        justify-content: space-evenly;
     }
 
     nav img{
@@ -168,10 +177,19 @@ footer p{
     }
 
     footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: space-evenly;
         padding: 14px 5%;
 
+    } 
+
+    .icon img{
+        margin: 0 auto;
+    }
+
+    footer div {
+        margin-top: 0;
+        text-align: left;
     }
     
     /*Creates a 3 columns grid in the products page to fit 3 cards next each order */
@@ -179,10 +197,10 @@ footer p{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
 }
 
 @media screen and (min-width: 1020px){
+    /*Creates a  2 colunm grid in the home page to fit the image beside the heading and paragraph*/
     .container-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -200,6 +218,18 @@ footer p{
 
     .grid{
         padding: 22px 10%;
+    }
+
+    /*Uses class to style container in about page which has a different style then the others pages*/
+    .about-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 5% 10%;
+        padding: 14px;
+    }
+
+    div img{
+        margin: auto 14px;
     }
 }
 
