@@ -14,16 +14,17 @@
 <body>
         <nav class="navbar bg-dark navbar-dark navbar-expand-sm ">
             <div class="container">
-                <a class="navbar-brand d-none d-sm-inline-block" href="#"> Boostrap
+                <a class="navbar-brand d-none d-sm-inline-block" href="#home"> Boostrap
                     <!-- <img src=> -->
                 </a>
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link px-3 active" href="#">Home</a></li>
-                    <a class="nav-item nav-link px-3" href="#">Icons</a></li>
-                    <a class="nav-item nav-link px-3" href="#">Sizes</a></li>
-                    <a class="nav-item nav-link px-3" href="#">Contact</a></li>
+                    <a class="nav-item nav-link px-3 active" href="#home">Home</a></li>
+                    <a class="nav-item nav-link px-3" href="#icons">Icons</a></li>
+                    <a class="nav-item nav-link px-3" href="#buttons">Buttons</a></li>
+                    <a class="nav-item nav-link px-3" href="#carousel">Carousel</a></li>
+                    <a class="nav-item nav-link px-3" href="#accordion">Accordion</a></li>
                 </div>
-                <div>
+                <div class="d-none d-sm-inline-block">
                     <a href="https://www.facebook.com/"><i class="bi bi-facebook me-2 text-light"></i></a>
                     <a href="https://www.instagram.com/"><i class="bi bi-instagram me-2 text-light"></i></a>
                     <a href="https://www.linkedin.com/"><i class="bi bi-linkedin me-2 text-light"></i></a>
@@ -34,38 +35,159 @@
     <img class="mx-auto">
 
     <main>
-        <div class="container">
+        <div id="home" class="container">
             <div> 
                 <h2>What is Bootstrap?</h2>
-                <p>Bootstrap is a free open-source CSS framework created to help developers to build quickly and easily responsive, mobile-ready websites that are compatible with many browsers. Bootstrap features a 12-column grid and components ready to use.</p>
-                <hr>
+                <p>Bootstrap is a free open-source CSS framework created to help developers to build quickly and easily responsive, mobile-ready websites that are compatible with many browsers. Bootstrap uses the grid system with a 12-column grid and a serie of containers, rows and components ready to use. It's responsive and the margin between the columns within a row is 15px each side. The grid size options is listed bellow. </p>
+                <h3 class="h5">Bootstrap size options</h3>
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="col table-light"><i class="bi bi-aspect-ratio"></i></th>
+                            <th class="col table-light">Extra Small </th>
+                            <th class="col table-light">Small </th>
+                            <th class="col table-light">Medium </th>
+                            <th class="col table-light">Large </th>
+                            <th class="col table-light">Extra Large </th>
+                            <th class="col table-light">Extra extra Large </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th >Class</th>
+                            <th>xs </th>
+                            <th>sm </th>
+                            <th>md </th>
+                            <th>lg </th>
+                            <th>xl </th>
+                            <th>xxl </th>
+                        </tr>
+                        <tr>
+                            <th>Breack Point</th>
+                            <th>0 </th>
+                            <th>576px </th>
+                            <th>768px </th>
+                            <th>992px </th>
+                            <th>1200px </th>
+                            <th>1400px </th>
+                        </tr>
+                        <tr>
+                            <th>Max-width</th>
+                            <th>0 </th>
+                            <th>540px </th>
+                            <th>720px </th>
+                            <th>960px </th>
+                            <th>1140px </th>
+                            <th>1320px </th>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div>
-                <h2>Installation</h2>
+                <h3 class="h5">Installation</h3>
                 <p>Installation methods:</p>
                 <ul>
                     <li><strong>CSS and JS:</strong> Download the pre-complied bootstrap CSS and JavaScript files from bootstrap website. This method works well because it will work without an internet connection as well.</li>
-                    <li><strong>Bootstrap CDN: </strong>Place that hosts libraries like bootstrap. The advantage of using CDN is that the website loads faster if the browser already has the cache version in its memory. </li>
+                    <li><strong>Bootstrap CDN: </strong>Place that hosts libraries like bootstrap. Copy and paste the link tag in the code. The advantage of using CDN is that the website loads faster if the browser already has the cache version in its memory. </li>
                     <li><strong>Source files: </strong>All the files that the developers used to create bootstrap. It’s good to use this installation if the goal is to contribute to projects of customized bootstrap. </li>
                     <li><strong>Package managers: </strong> Advanced installation. Used to work in more complex projects.</li>
                 </ul>
             </div>
-            <div>
+            <hr>
+            <!--ICONS-->
+            <section id="icons">
                 <h2> Bootstrap Icons</h2>
                 <p>Free library. One of the easiest ways to install Bootstrap Icons is copying and pasting the code below in your code. This method is great so the code will be smaller as there is less code.</p>
 
                 <p> Add link here </p>
                 
-                <p>Then, go to <a href="https://icons.getbootstrap.com/">icons.getbootstrap.com</a> and search for the icon. Once you find it, click on the icon, and copy and past the Icon font code to your project.</p>
-                <p>It is possible to modify the icon style by changing the text-color style.</p>
-            </div>
-            <div>
-                <div> Box</div>
-                <div> Box</div>
-                <div> Box</div>
-                <div> Box</div>
-                <div> Box</div>
-            </div>
+                <p>Then, go to <a href="https://icons.getbootstrap.com/">icons.getbootstrap.com</a> and search for the icon. Once you find it, click on the icon, and copy and past the Icon font code to your project. It is possible to modify the icon style by changing the text-color style.</p>
+                <h6>Examples 1:</h6>
+                <!--Navigation example with icons-->
+                <nav class="navbar navbar-dark bg-primary navbar-expand-sm ">
+                    <div class="container">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link px-3" href="#">Home</a></li>
+                            <a class="nav-item nav-link px-3" href="#">About</a></li>
+                            <a class="nav-item nav-link px-3" href="#">Services</a></li>
+                            <a class="nav-item nav-link px-3" href="#">Contact</a></li>
+                        </div>
+                        <div>
+                            <i class="bi bi-cart-fill me-2 text-light"></i>
+                            <i class="bi bi-share-fill me-2 text-light"></i>
+                            <i class="bi bi-person-fill me-2 text-light"></i>
+                        </div>
+                    </div>
+                </nav>
+                <h6 class="mt-4">Examples 2:</h6>
+                <div class= "container mt-3">
+                    <div class="row">
+                        <div class="col-6 col-md-3 bg-light text-center p-2">
+                            <h3 class="h6"> Location</h3>
+                            <i class="bi bi-geo-alt-fill mx-3"></i>
+                            <i class="bi bi-geo-alt mx-2"></i>
+                        </div>
+                        <div class="col-6 col-md-3 bg-light text-center p-3">
+                            <h3 class="h6"> Shopping Card</h3>
+                            <i class="bi bi-cart-fill mx-2"></i>
+                            <i class="bi bi-cart mx-2"></i>
+                        </div>
+                        <div class="col-6 col-md-3 bg-light text-center p-3">
+                            <h3 class="h6"> Telephone</h3>
+                            <i class="bi bi-telephone-fill mx-2"></i>
+                            <i class="bi bi-telephone mx-2"></i>
+                        </div>
+                        <div class="col-6 col-md-3 bg-light text-center p-3">
+                            <h3 class="h6"> Heart</h3>
+                            <i class="bi bi-heart-fill mx-2"></i>
+                            <i class="bi bi-heart mx-2"></i>
+                        </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </section>
+            <hr>
+            <!--BUTTONS-->
+            <section id="buttons">
+                <h2 class="mt-3">Bootstrap Buttons</h2>
+                    <div>
+                        <p> Bootstrap has a basic class for creating buttons. The <strong>btn</strong> class should be used with additional classes such as size, color and can be added to anchor tags, buttons, and inputs and the style will always look the same. There is also a special style called btn-block (which will take the full width of the container), active and disabled. </p>
+                        <h6>Examples:</h6> 
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="text-center col-md-6 col-lg-3 p-4">
+                                <p>This is a button created by using the button tag and classes <u>"btn btn-primary"</u> for button style.  </p>
+                                <button class="btn btn-primary btn-block" type="submit">Button</button>
+                            </div>
+                            <div class="text-center col-md-6 col-lg-3 p-4">
+                                <p>This is a button created by using the anchor tag and using the classes <u>"btn btn-danger"</u> for button style</p>
+                                <a class="btn btn-danger" role="button">Link</a>
+                            </div>
+                            <div class="text-center col-md-6 col-lg-3 p-4">
+                                <p>This is a button created by using the input tag and using the classes <u>"btn btn-sucess"</u> for button style</p>
+                                <input class="btn btn-success" type="button" value="Input">
+                            </div>
+                            <div class="text-center col-md-6 col-lg-3 p-4">
+                                <p>This is a button created by using the button tag and classes <u>"btn btn-outline-warning"</u> for button style.  </p>
+                                <button class="btn btn-outline-warning" type="submit">Button</button>
+                            </div>
+                            <!-- <div>
+                                <p>This is a button created by using the button tag and classes <u>"btn btn-info btn-block"</u> for button style.  </p>
+                                <button class="btn btn-info btn-block">Button</button>
+                            </div> -->
+                        </div><!--row-->
+                    </div><!--container-->
+            </section>
+            <!--CAROUSEL-->
+            <section id="carousel">
+                <div>
+                    <h2 class="mt-3">Bootstrap Carousel</h2>
+                </div>
+            </section>
+            <section id="accordion">
+                <h2 class="mt-3">Bootstrap Accordion</h2>
+            </section>
         </div> <!-- end div container-->
     </main>
 
