@@ -23,21 +23,21 @@
                 <a class="nav-item nav-link px-3" href="#progress">Progress</a>
             </div>
             <div class="d-none d-sm-inline-block">
-                <a href="https://www.facebook.com/"><i class="bi bi-facebook me-2 text-light"></i></a>
-                <a href="https://www.instagram.com/"><i class="bi bi-instagram me-2 text-light"></i></a>
-                <a href="https://www.linkedin.com/"><i class="bi bi-linkedin me-2 text-light"></i></a>
+                <a href="https://www.facebook.com/" target=”_blank”><i class="bi bi-facebook me-2 text-light"></i></a>
+                <a href="https://www.instagram.com/" target=”_blank”><i class="bi bi-instagram me-2 text-light"></i></a>
+                <a href="https://www.linkedin.com/" target=”_blank”><i class="bi bi-linkedin me-2 text-light"></i></a>
             </div>
         </div>
     </nav>
     <main>
         <section class="bg-dark">
-            <div class="container text-center py-5">
+            <div class="container text-center p-5">
                 <div class="d-md-flex align-items-center text-light">
-                    <img class="img-fluid" src="../bootstrap/images/pc-banner.png" alt="banner1">
-                    <div class="m-5">
+                    <img class="img-fluid mb-4" src="../bootstrap/images/pc-banner.png" alt="banner1">
+                    <div class="ms-md-5">
                         <h1> Welcome to the Bootstrap Framework!</h1>
-                        <p>Here you'll find information about how to install and use bootstrap CSS framework.</p>
-                        <a class="btn btn-outline-light" role="button" href="#start"><strong>Get Started</strong></a>
+                        <p class="px-lg-5">Here you'll find information about the bootstrap CSS framework, installation, components, and instructions on how to use it.</p>
+                        <a class="btn btn-light mt-3 px-5" role="button" href="#start"><strong>Get Started</strong></a>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
             <!-- START/ BOOTSTRAP INSTALLATION-->
             <section id="start" class="mt-4">
                 <h2>What is Bootstrap?</h2>
-                <p>Bootstrap is a free open-source CSS framework created to help developers to build quickly and easily responsive, mobile-ready websites that are compatible with many browsers. Bootstrap uses the grid system with a 12-column grid and a serie of containers, rows and components ready to use. It's responsive and the margin between the columns within a row is 15px each side. The grid size options is listed bellow. </p>
+                <p class="mt-3">Bootstrap is a free open-source CSS framework created to help developers to build quickly and easily responsive, mobile-ready websites that are compatible with many browsers. Bootstrap uses the grid system with a 12-column grid and a serie of containers, rows and components ready to use. It's responsive and the margin between the columns within a row is 15px each side. The grid size options is listed bellow. </p>
                 <div class="row">
                     <div class="col-xl-6">
                         <h3 class="h5">Bootstrap size options</h3>
@@ -73,7 +73,7 @@
                                     <th>xxl </th>
                                 </tr>
                                 <tr>
-                                    <th>Breack Point</th>
+                                    <th>Break Point</th>
                                     <th>0 </th>
                                     <th>576px </th>
                                     <th>768px </th>
@@ -108,11 +108,9 @@
             <!--ICONS-->
             <section id="icons" class="mt-4">
                 <h2>Bootstrap Icons</h2>
-                <p>It is a free library. One of the easiest ways to install Bootstrap Icons is through Icons font. Copying and pasting the code below in your code is a good method because the code will be smaller.</p>
-
-                <p> Add link here </p>
-                
-                <p>After pasting the coding in the header of you html project, go to <a href="https://icons.getbootstrap.com/">icons.getbootstrap.com</a> and search for an icon. Once you find it, click on the icon, and copy and past the Icon font code to your project. Inaddition, it is possible to modify the icon style by using the class text-color and changing the color style.</p>
+                <p>Bootstrap icons is a free library. One of the easiest ways to install Bootstrap Icons is through Icons font. Copying and pasting the code below in the HTML file is a good method..</p>
+                <p class="text-secondary"> &#60link rel="stylesheet" href="https:&#47&#47cdn.jsdelivr.net&#47npm&#47bootstrap-icons@1.5.0&#47font&#47bootstrap-icons.css"&#62</p>
+                <p>After pasting the coding in the header of the HTML file, go to <a href="https://icons.getbootstrap.com/" target=”_blank”>icons.getbootstrap.com</a> and search for an icon. Once you find it, click on the icon, and copy and past the Icon font code to your project. In addition, it is possible to modify the icon style by using the class text-color and changing the color style.</p>
                 <h6 class="mt-3">Examples 1:</h6>
                 <!--Navigation example with icons-->
                 <nav class="navbar navbar-dark bg-secondary navbar-expand-sm ">
@@ -164,30 +162,28 @@
                         <p> Bootstrap has a basic class for creating buttons. The <em>btn</em> class should be used with additional classes such as size, color and can be added to anchor tags, buttons, and inputs and the style will always look the same. There is also a special style called btn-block (which will take the full width of the container), active and disabled. </p>
                         <h6>Examples:</h6> 
                     </div>
-                    <div class="container"> <!--Buttons example using cards-->
-                        <div class="row">
-                            <div class="card text-center col-md-6 col-lg-3 p-4">
-                                <h3 class="card-title h4">Button 1</h3>
-                                <p>This is a button created by using the button tag and classes <u>"btn btn-primary"</u> for button style.  </p>
-                                <button class="btn btn-primary btn-block" type="submit">Button</button>
-                            </div>
-                            <div class="card text-center col-md-6 col-lg-3 p-4">
-                                <h3 class="card-title h4">Button 2</h3>
-                                <p>This is a button created by using the anchor tag and using the classes <u>"btn btn-danger"</u> for button style</p>
-                                <a class="btn btn-danger" role="button">Link</a>
-                            </div>
-                            <div class="card text-center col-md-6 col-lg-3 p-4">
-                                <h3 class="card-title h4">Button 3</h3>
-                                <p>This is a button created by using the input tag and using the classes <u>"btn btn-sucess"</u> for button style</p>
-                                <input class="btn btn-success" type="button" value="Input">
-                            </div>
-                            <div class="card text-center col-md-6 col-lg-3 p-4">
-                                <h3 class="card-title h4">Button 4</h3>
-                                <p>This is a button created by using the button tag and classes <u>"btn btn-outline-warning"</u> for button style.  </p>
-                                <button class="btn btn-outline-warning" type="submit">Button</button>
-                            </div>
-                        </div><!--close row buttons example-->
-                    </div><!--close container buttons example-->
+                    <div class="d-md-flex">
+                        <div class="card bg-light text-center  p-4 m-1">
+                            <h3 class="card-title h4">Button 1</h3>
+                            <p>This is a button created by using the button tag and classes <u>"btn btn-info"</u> for button style.  </p>
+                            <button class="btn btn-info btn-block" type="submit">Button</button>
+                        </div>
+                        <div class="card bg-light text-center p-4 m-1">
+                            <h3 class="card-title h4">Button 2</h3>
+                            <p>This is a button created by using the anchor tag and using the classes <u>"btn btn-danger"</u> for button style.</p>
+                            <a class="btn btn-danger" role="button">Link</a>
+                        </div>
+                        <div class="card bg-light text-center  p-4 m-1">
+                            <h3 class="card-title h4">Button 3</h3>
+                            <p>This is a button created by using the input tag and using the classes <u>"btn btn-sucess"</u> for button style.</p>
+                            <input class="btn btn-success" type="button" value="Input">
+                        </div>
+                        <div class="card bg-light text-center  p-4 m-1">
+                            <h3 class="card-title h4">Button 4</h3>
+                            <p>This is a button created by using the button tag and classes <u>"btn btn-outline-warning"</u> for button style.  </p>
+                            <button class="btn btn-outline-warning" type="submit">Button</button>
+                        </div>
+                    </div><!--close flex-->
             </section>
             <hr>
             <!--CAROUSEL-->
@@ -196,13 +192,13 @@
                     <div class="row">
                         <div class="col-xl-6 order-xl-2">
                             <h2 class="mb-3">Bootstrap Carousel</h2>
-                            <p>Carousel allows the developer to display a lot of content in a small area. In order to create a simple carousel it's necessary few code listed bellow:</p>
+                            <p>Carousel allows the developer to display a lot of content in a small area. In order to create a simple carousel it's necessary a few classes and attributes listed bellow:</p>
                             <ul>
-                                <li>Use the class <em>.carousel</em>; also it's important to assigner a unique <em>id</em> in case the page have more than one carousel.</li>
-                                <li>Add a data-bs-ride carousel property; this it'll make the images switch-over by default every 5 seconds.</li>
-                                <li>Add the class <em>.carousel-inner</em></li>
-                                <li>the class <em>carousel-item</em> for each image in the carousel component. In each on of the images it's also required to add the classes <em>.d-block</em> and <em>w-100</em>. This will make the images be a full width of the container.</li>
-                                <li>The images can transition from one to another usinf the classes <em>slide</em> and <em>carousel-fade</em>.</li>
+                                <li>Use the class <em>carousel</em>; also it's important to assign a unique <em>id</em> in case the page have more than one carousel.</li>
+                                <li>Add a data-bs-ride carousel property; this property will make the images switch-over by default every 5 seconds.</li>
+                                <li>Add the class <em>carousel-inner</em>.</li>
+                                <li>Add the class <em>carousel-item</em> for each image in the carousel component. In each one of the images it's also required to add the classes <em>d-block</em> and <em>w-100</em>. This will make the images be a full width of the container.</li>
+                                <li>The images can transition from one to another using the classes <em>slide</em> and <em>carousel-fade</em>.</li>
                             </ul>
                         </div>
                         <div id="simplecarousel" class="carousel slide carousel-fade col-xl-6" data-bs-ride="carousel">
@@ -223,17 +219,17 @@
                         </div>
                    </div>  <!--close row carousel-->
                 </div> <!-- close container carousel-->
-            </section>
             <hr>
+            </section>
             <!--PROGRESS-->
-            <section id="progress" class="mt-3">
+            <section id="progress" class="container mt-3">
                 <div class="row">
                     <h2>Bootstrap Progress</h2>
                     <div class="col-xl-6">
                         <p class="mt-3"> Progress Bar is a graphic control element that can be used to visualize how far the user is in a process. It can be used to show the download progress, file transfer, or even a skills section in a Portfolio or website. Bootstrap provide different types of progress bars and the graphic bars can have a text over them to add a better experience to the user. Also, the bar can be styled to achieve different higths, formats and colors. In order to create a basic progress bar using Bootstrap the following is required:</p>
                         <ul>
-                            <li>A div tag with the class <em>.progress</em></li>
-                            <li>A div tag child with the class <em>.progress-bar</em></li>
+                            <li>A div tag with the class <em>progress</em></li>
+                            <li>A div tag child with the class <em>progress-bar</em></li>
                             <li>The role, aria-valuenow, aria-valuemin and aria-valuemax attributes <br>
                                 Role: Describe the role of an element; in this case is <em>progresssbar.</em><br>
                                 Aria-valuenow: Define the value of the progressbar; i.g. Skill 1 = 60.<br>
@@ -243,7 +239,7 @@
                         </ul>
                     </div>
                     <!--Progress bar-->
-                    <div class="mb-5 col-xl-6">
+                    <div class="mb-3 col-xl-6">
                         <h6>Example:</h6>
                         <div class="card my-3 align-self-center">
                             <div class="card-body">
@@ -272,19 +268,8 @@
         </div> <!-- end div start container-->
     </main>
     <footer class="bg-dark">
-        <div class="container">
-            <div class="row">
-                <i class="bi bi-bootstrap-fill text-light h2 my-3 col-lg-4"></i>
-                <div class="col-lg-4 order-lg-3">
-                    <form class="d-flex my-3">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-light" type="submit">Search</button>
-                    </form>
-                </div>
-                <div class="col-lg-4 text-light align-self-center text-center text-lg-start"> 
-                    <p> &copy;2021 Marina Wolff </p>
-                </div>
-            </div>
+        <div class="text-light align-self-center text-center p-3"> 
+            <p> &copy;2021 Marina Wolff </p>
         </div>
     </footer>
 
