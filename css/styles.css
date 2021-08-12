@@ -5,15 +5,15 @@
 }
 
 :root {
-    --primary-color: #ffff;
-    --secondary-color: ;
-    --tertiary-color: ;
-    --overlay-color: ;
+    --primary-color: #c2948a;
+    --secondary-color: #1E2131 ;
+    --tertiary-color: #ddb2ab ;
+    --bg-color: rgba(235, 235, 235, 0.612);
 
     --primary-font: 'Roboto', Helvetica, sans-serif; 
     --secondary-font: 'Sintony', Arial, sans-serif;
 
-    --h1: 100px;
+    --h1: 80px;
     --h2: 46px;
     --h3: 36px;
     --h4: 26px;
@@ -26,57 +26,144 @@ img{
 }
 
 .icon{
-    max-width: 120px;
+    max-width: 150px;
 }
 
 h1{
     font-family: var(--primary-font);
     font-size: var(--h1);
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 h2{
     font-family: var(--primary-font);
     font-size: var(--h2);
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 h3{
     font-family: var(--secondary-font);
     font-size: var(--h3);
+    color: var(--secondary-color);
 }
 
 h4{
     font-family: var(--secondary-font);
     font-size: var(--h4);
     font-weight: bold;
+    color: var(--secondary-color);
 }
 
 p{
     font-family: var(--secondary-font);
     font-size: 18px;
+    color: var(--secondary-color);
 }
 
 .nav-link{
     font-family: var(--secondary-font);
     font-size: 18px;
+    font-weight: bold;
 }
 
 nav img{
     max-width: 100px;
 }
 
+.banner-image{
+    background-image: url(../images/banner-1.png);
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+.navbar-nav a{
+    color: var(--secondary-color);;
+}
+
+.navbar-nav a:hover{
+    color: var(--primary-color);
+}
+
+.btn{
+    font-size: var(--h6);
+    font-family: var(--secondary-font);
+    width: 200px;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: var(--secondary-color);
+    border: none;
+    color:white;
+    border: 2px solid var(--secondary-color);
+}
+
+.card{
+    border: none;
+    background-color: inherit ;
+}
+
+.icon{
+    color: var(--primary-color);
+}
+
+.progress-bar{
+    background-color: var(--tertiary-color);
+}
+
+.progress{
+    height: 30px;
+    background-color: var(--bg-color);
+}
+
+.project{
+    background-color: var(--tertiary-color);
+}
+
+#portfolio{
+    background-color: var(--bg-color);
+}
+
+#portfolio a{
+    color: white;
+    font-family: var(--secondary-font);
+    font-size: var(--h3);
+}
+
+#portfolio a:hover{
+    color: var(--primary-color);
+}
+
+#about a{
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+#about a:hover{
+    color: var(--tertiary-color);
+}
+
+.bi{
+    color: var(--primary-color)
+}
+
 footer p{
     font-size: 14px;
 }
 
-.banner-image{
-    background-image: url();
-    background-size: cover;
-}
+/* Style appredesign.html */
 
-#nav{
-    background-color: transparent;
-}
-
-#portfolio{
-    background-color: rgb(72, 127, 134);
+main .container{
+    margin-top: 120px;
 }
