@@ -4,41 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet"> <!-- ff-sintony-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!--ff-roboto-->
+    <!--CSS stylesheet-->
     <link rel="stylesheet" href="css/styles.css">
     <title>Portfolio</title>
 </head>
 <body>
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div class="container">
-            <img class="navbar-brand" src="#">
+            <img class="navbar-brand" src="../images/logo-white.png" alt="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav text-uppercase">
-                <a class="nav-link active p-4" href=".home">Home</a>
-                <a class="nav-link p-4" href=".about">About</a>
-                <a class="nav-link p-4" href=".portfolio">Portfolio</a>
-                <a class="nav-link p-4" href=".contact">Contact</a>
+                <a class="nav-link active p-4" href="#home">Home</a>
+                <a class="nav-link p-4" href="#about">About</a>
+                <a class="nav-link p-4" href="#portfolio">Portfolio</a>
+                <a class="nav-link p-4" href="#contact">Contact</a>
             </div>
           </div>
         </div>
       </nav>
-
-
-
-    <main>
-        <section class="container">
+      <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+          <div class=" container text-center">
+            <h1>Hi, I am Marina!</h1>
+            <h3 class="mt-3">I am a Interaction Designer based in Ottawa, ON.</h3>
+            <a class="btn btn-light p-2 mt-5" role="button" href="#portfolio">Portfolio</a>
+          </div>
+        </div>
+        <main>
+        <!--ABOUT-->
+        <section id="about" class="container">
+          <h2 class="text-center">About</h2>
+          <!-- Abilities-->
+            <div class="d-md-flex">
+              <div class="card bg-light text-center p-4 m-1">
+                <img class="icon align-self-center" src="images/icons/ui_ux_design_icon.svg" alt="ui-ux-design-icon">
+                <h4 class="mt-2"> UI/UX Design</h4>
+                <p>I create products using the user experience design process, strategy, and focusing on details.</p>
+              </div>
+              <div class="card bg-light text-center p-4 m-1">
+                <img class="icon align-self-center" src="images/icons/responsive_design_icon.svg" alt="responsive-web-icon">
+                <h4 class="mt-4 mb-3"> Responsive Design</h4>
+                <p>My layouts and web products will be easily accessible across all devices. Don't worry! </p>
+              </div>
+              <div class="card bg-light text-center p-4 m-1">
+                <img class="icon align-self-center" src="images/icons/graphic_design_icon.svg" alt="graphic-design-icon">
+                <h4 class="mt-4 mb-3"> Graphic Design</h4>
+                <p>Personalized graphic illustrations will give your brand a unique and reliable look.</p>
+              </div>
+            </div>
+            <!--about me-->
             <div>
-                <h1>Hi, I am Marina! I am a Interaction Designer</h1>
-                <p>I am an undergraduate Interactive Media Design student at Algonquin College. With focus in UI/UX design and web design, </p>
+              <div>
+                <img>
+                <h3>Hi, I am Marina!</h3>
+                <p>I am an Interactive Media Design student focused on visual and web design. I am pensioned for creating UI Designs and developer products focusing in User experience.</p>
+                <a href="#contact">Let's create something great!</a>
+              </div>
+            </div>
+            <!--Skills/Progress Bar-->
+            <div class="mb-3 col-xl-6">
+              <h3>Skills</h3>
+              <div class="card my-3 align-self-center">
+                <div class="card-body">
+                    <div class="progress mb-3" style="height: 25px;">
+                      <h6 >Skill 1</h6>
+                      <div class="progress-bar " role="progressbar" aria-valuenow="60" style="width: 60%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3" style="height: 30px;">
+                      <h6 >Skill 1</h6>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="25" style="width: 25%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3" style="height: 30px;">
+                      <h6 >Skill 1</h6>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="48" style="width: 48%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3" style="height: 30px;">
+                      <h6 >Skill 1</h6>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" style="width: 90%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3" style="height: 30px;">
+                      <h6 >Skill 1</h6>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" style="width: 90%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3" style="height: 30px;">
+                      <h6 >Skill 1</h6>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" style="width: 90%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3" style="height: 30px;">
+                      <h6 >Skill 1</h6>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" style="width: 90%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3" style="height: 30px;">
+                      <h6 >Skill 1</h6>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" style="width: 90%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3" style="height: 30px;">
+                      <h6 >Skill 1</h6>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" style="width: 90%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+              </div>
             </div>
         </section>
-    
+        <!--PROJECTS/ PORTFOLIO-->
+        <section id="portfolio" class="pt-5 pb-5">
+          <div class="text-center">
+            <h2>Projects</h2>
+          </div>
+          <div class= "row">
+            <div>
+              <img> 
+            </div>
+            <div>
+              <img> 
+            </div>
+            <div>
+              <img> 
+            </div>
+            <div>
+              <img> 
+            </div>
+            <div>
+              <img> 
+            </div>
+            <div>
+              <img> 
+            </div>
+          </div>
+        </section>
     </main>
+    <footer class="bg-light">
+      <div class="container">
+        <div class="text-dark text-center d-md-flex justify-content-md-between pt-3 pt-md-4 pb-md-4"> 
+          <p> &copy;2021 Marina Wolff • All rights reserved</p>
+            <div>
+            <a href="https://github.com/marinawolff" target=”_blank”><i class="bi bi-github me-4 text-dark h3"></i></a>
+            <a href="https://www.instagram.com/marinajwolff/" target=”_blank”><i class="bi bi-instagram me-4 text-dark h3"></i></a>
+            <a href="https://www.linkedin.com/in/marina-wolff/" target=”_blank”><i class="bi bi-linkedin text-dark h3"></i></a>
+            </div>
+        </div>
+      </div>
+  </footer>
     <!-- JavaScript installation -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

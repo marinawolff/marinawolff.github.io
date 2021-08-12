@@ -5,7 +5,78 @@
 }
 
 :root {
-    --primary-color: ;
+    --primary-color: #ffff;
     --secondary-color: ;
+    --tertiary-color: ;
     --overlay-color: ;
+
+    --primary-font: 'Roboto', Helvetica, sans-serif; 
+    --secondary-font: 'Sintony', Arial, sans-serif;
+
+    --h1: 100px;
+    --h2: 46px;
+    --h3: 36px;
+    --h4: 26px;
+    --h6: 22px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.icon{
+    max-width: 120px;
+}
+
+h1{
+    font-family: var(--primary-font);
+    font-size: var(--h1);
+}
+
+h2{
+    font-family: var(--primary-font);
+    font-size: var(--h2);
+}
+
+h3{
+    font-family: var(--secondary-font);
+    font-size: var(--h3);
+}
+
+h4{
+    font-family: var(--secondary-font);
+    font-size: var(--h4);
+    font-weight: bold;
+}
+
+p{
+    font-family: var(--secondary-font);
+    font-size: 18px;
+}
+
+.nav-link{
+    font-family: var(--secondary-font);
+    font-size: 18px;
+}
+
+nav img{
+    max-width: 100px;
+}
+
+footer p{
+    font-size: 14px;
+}
+
+.banner-image{
+    background-image: url();
+    background-size: cover;
+}
+
+#nav{
+    background-color: transparent;
+}
+
+#portfolio{
+    background-color: rgb(72, 127, 134);
 }
