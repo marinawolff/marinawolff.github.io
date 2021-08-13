@@ -9,11 +9,11 @@ After that, I used HTML, Bootstrap framework, and CSS to build the web portfolio
 
 The image below shows how I was coding the Projects Section and not getting the results I expected. 
 
-![](images/project-1.jpg)
+![Image 1](images/project-1.JPG)
 
 The image below shows how I fixed the problem. 
 
-![](images/project-solution.jpg)
+![Image 2](images/project-solution.JPG)
 
 2. Another challenge was to discover how to create a proper README file. This was not part of the portfolio website, but of the entire project and I was determined to learn how to create it using the Markdown language. Markdown is a very simple language to learn and after doing some online research I was able to create a basic file.   
 
