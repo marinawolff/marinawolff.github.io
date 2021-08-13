@@ -12,12 +12,6 @@
 
     --primary-font: 'Roboto', Helvetica, sans-serif; 
     --secondary-font: 'Sintony', Arial, sans-serif;
-
-    --h1: 80px;
-    --h2: 46px;
-    --h3: 36px;
-    --h4: 26px;
-    --h6: 22px;
 }
 
 img{
@@ -31,27 +25,27 @@ img{
 
 h1{
     font-family: var(--primary-font);
-    font-size: var(--h1);
+    font-size: 68px;
     color: var(--secondary-color);
     font-weight: bold;
 }
 
 h2{
     font-family: var(--primary-font);
-    font-size: var(--h2);
+    font-size: 42px;
     color: var(--secondary-color);
     font-weight: bold;
 }
 
 h3{
     font-family: var(--secondary-font);
-    font-size: var(--h3);
+    font-size: 32px;
     color: var(--secondary-color);
 }
 
 h4{
     font-family: var(--secondary-font);
-    font-size: var(--h4);
+    font-size: 22px;
     font-weight: bold;
     color: var(--secondary-color);
 }
@@ -94,7 +88,7 @@ nav{
 }
 
 .btn{
-    font-size: var(--h6);
+    font-size: 20px;
     font-family: var(--secondary-font);
     width: 250px;
     background-color: transparent;
@@ -134,24 +128,33 @@ nav{
     background-color: var(--bg-color);
 }
 
-#portfolio a{
+#portfolio h3{
     color: white;
     font-family: var(--secondary-font);
-    font-size: var(--h3);
 }
 
-#portfolio a:hover{
+#portfolio h3:hover{
     color: var(--primary-color);
 }
 
 #about a{
     font-family: var(--secondary-font);
     color: var(--primary-color);
+    font-size: 18px;
 }
 
 #about a:hover{
     color: var(--tertiary-color);
 }
+
+.zoom{
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+  }
 
 .bi{
     color: var(--primary-color)
@@ -161,12 +164,34 @@ footer p{
     font-size: 14px;
 }
 
-/* Style appredesign.html */
-
 main .container{
-    margin-top: 120px;
+    margin-top: 100px;
+}
+
+/* Style appredesign.html page */
+
+.app{
+    margin-top: 200px;
 }
 
 /* .btn{
     width: 100%;
 } */
+
+@media screen and (min-width:740px){
+    h1{
+        font-size: 80px;
+    }
+    
+    h2{
+        font-size: 46px;
+    }
+    
+    h3{
+        font-size: 36px;
+    }
+    
+    h4{
+        font-size: 26px;
+    }
+}

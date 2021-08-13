@@ -2,7 +2,13 @@
 
 ## Notes
 
+The most challenge part I faced creating this web portfolio was the Projects Section. 
 
+### Improvements: 
+There are some improvements I would like to make to my portfolio in the future: 
+- First, I would like to create a navigation bar that changes the color when scrolling, so I can have a total transparent navbar on the first page and a solid colored navbar once the user reaches the About section and beyond. 
+- Secondly, once I develop more projects, I would like to create one page for each category (UI/UX Design, Web Design, and Graphic Design), and gather all my projects related to that category on their specific page. 
+- Thirdly, I would like to add a form section where the users can send me messages directily from the webpage. 
 
 ## References
 
@@ -37,5 +43,14 @@
 ### Images
 - Freepik Mockups
     * [Mockup psd created by customscene - www.freepik.com](https://www.freepik.com/psd/mockup)
+
+### Prototype Mockup
+- Adobe XD
+    * [Mobile]()
+    * [Tablet]()
+    * [Desktop]()
+
+
+
 
 
