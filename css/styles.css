@@ -50,6 +50,11 @@ h4{
     color: var(--secondary-color);
 }
 
+h6{
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+
 p{
     font-family: var(--secondary-font);
     font-size: 18px;
@@ -148,7 +153,7 @@ nav{
 }
 
 .zoom{
-    transition: transform .2s; /* Animation */
+    transition: transform .2s; 
     margin: 0 auto;
 }
 
@@ -158,6 +163,10 @@ nav{
 
 .bi{
     color: var(--primary-color)
+}
+
+footer{
+    background-color: white;
 }
 
 footer p{
@@ -170,8 +179,8 @@ main .container{
 
 /* Style appredesign.html page */
 
-.app{
-    margin-top: 200px;
+.container.app{
+    margin-top: 150px;
 }
 
 /* .btn{

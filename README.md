@@ -21,7 +21,7 @@ The image below shows how I fixed the problem.
 There are some improvements I would like to make to my portfolio in the future: 
 - First, I would like to create a navigation bar that changes the color when scrolling, so I can have a 100% transparent navbar on the first page and a solid colored navbar once the user reaches the About section and beyond. 
 - Secondly, once I develop more projects, I would like to create one page for each category (UI/UX Design, Web Design, and Graphic Design), and gather all my projects related to that category on their specific page. 
-- Thirdly, I would like to add a form section where the users can send me messages directly from the webpage. 
+- Thirdly, I would like to add a form to the Contact section where the users can send me messages directly from the webpage. 
 
 ## References
 
@@ -30,7 +30,7 @@ There are some improvements I would like to make to my portfolio in the future:
     https://getbootstrap.com/
 
 ### Fonts
-- Google Fonts
+- Google Fonts:
     * Roboto Font: 
         https://fonts.google.com/specimen/Roboto?query=roboto
     * Sintony Font: 
@@ -53,16 +53,16 @@ There are some improvements I would like to make to my portfolio in the future:
     * [Responsive Design Icon](https://www.iconfinder.com/icons/4047401/business_design_research_respond_responsive_web_website_icon)
     * [Graphic Design Icon](https://www.iconfinder.com/icons/6140888/anchor_design_pen_point_tool_icon)
 
-### Images
-UI/UX Design and Web Design Mockup Images:
-- Freepik Mockups
+### Mockup graphics
+UI/UX Design and Web Design Mockup used in UX Design class:
+- Freepik
     * [Mockup psd created by customscene - www.freepik.com](https://www.freepik.com/psd/mockup)
 
 ### Prototype Mockup
 - Adobe XD
-    * [Mobile]()
-    * [Tablet]()
-    * [Desktop]()
+    * [Mobile](https://xd.adobe.com/view/614b8a52-7f7b-4569-bbe2-dcc2300730b6-3418/)
+    * [Tablet](https://xd.adobe.com/view/a2c63132-8c4f-45e3-a8f2-62619c0f0b92-f795/)
+    * [Desktop](https://xd.adobe.com/view/1e5c7ff1-dbc7-42b9-b76e-35fbae6de149-4b0f/)
 
 
 
