@@ -81,10 +81,10 @@ a{
 }
 
 /* Importante is used to change the background color of the navbar when scrolling down */
-/* .bg-info{
+.bg-info{
     transition: 0.5s ease;
     background-color: var(--tertiary-color) !important;
-} */
+}
 
 /* nav{
     background-color: rgba(198, 37, 204, 0.507);
