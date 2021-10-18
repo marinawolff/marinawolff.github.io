@@ -57,7 +57,7 @@ h6{
 
 p{
     font-family: var(--secondary-font);
-    font-size: 18px;
+    font-size: 16px;
     color: var(--secondary-color);
 }
 
@@ -208,5 +208,9 @@ main .container{
     
     h4{
         font-size: 26px;
+    }
+
+    p{
+        font-size: 18px;
     }
 }
